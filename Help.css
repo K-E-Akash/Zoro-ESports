@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Ruwudu&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Oswald:wght@500&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Ruwudu&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Oswald:wght@500&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Ruwudu&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 65px;
+    color: rgb(60, 255, 0);
+    font-family: 'Tektur', cursive;
+    margin: 15px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 320px;
+}
+
+header div,a {
+    font-size: 30px;
+    font-family: 'Tektur', cursive;
+    margin: 15px;
+    text-decoration: none;
+    color: crimson;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(179, 0, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    margin-top: 105px;
+    width: 70%;
+    height: 70vh;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0px 0px 5px 1px rgb(37, 37, 37);
+    border-radius: 5px;
+}
+
+section h1 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: 'Tektur', cursive;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+section p {
+    color: rgb(216, 216, 216);
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 90%;
+}
+
+section textarea {
+    resize: none;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 230px;
+    margin-top: 35px;
+    border-radius: 5px;
+}
+
+section input {
+    width: 120px;
+    height: 35px;
+    border: 1.5px solid white;
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 820px;
+    margin-top: 20px;
+}

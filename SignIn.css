@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+}
+
+.body {
+    background-color: rgb(179, 0, 224);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(60, 255, 0);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 15px 1px rgb(52, 52, 52);
+}
+
+.logo {
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 50px;
+    color: rgb(60, 255, 0);
+    font-family: 'Tektur', cursive;
+    margin-top: 10px;
+}
+
+#esports {
+    margin-bottom: 170px;
+    margin-top: 0px;
+}
+
+.logo p {
+    color: rgb(79, 92, 93);
+    font-size: 15px;
+    font-family: 'Nanum Gothic',sans-serif;
+    margin-bottom: 5px;
+}
+
+.logo a {
+    color: rgb(255, 0, 51);
+    text-decoration: none;
+    font-size: 20px;
+}
+.form, form {
+    width: 500px;
+    height: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.signin {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+label {
+    font-size: 21px;
+    font-family: 'Nanum Gothic',sans-serif;
+    margin-right: 160px;
+    margin-bottom: 8px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+input {
+    width: 220px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px grey solid;   
+}
+
+.password {
+    text-decoration: none;
+    color: rgb(25, 27, 27);
+    font-size: 13px;
+    font-family: 'Nanum Gothic',sans-serif;
+    margin-top: 5px;
+    margin-left: 100px;
+    font-weight: 600;
+}
+
+.signin_button {
+    width: 130px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin-top: 35px;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="Payment.css">
+    <link rel="icon" href="Icon.jpg">
+</head>
+    <body>
+    <div class="screen">
+        <div class="container">
+            <h2>Payment Form</h2>
+            <h2 id="title">Zoro ESports</h2>
+        <form action="Success.html">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="fees">Amount: </label>
+            <input type="text" id="fees" name="fees">
+            <br>
+            <br>
+            <div class="payment-options">
+                <label>Payment Method: </label>
+            <br>
+            <label class="radio-label">
+                <input type="radio" name="paymentMethod" value="card"
+                class="buttonsize"> Debit/Credit Card
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="paymentMethod" value="upi" class="buttonsize"> UPI
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="paymentMethod" value="netbanking" class="buttonsize"> Net Banking
+            </label>
+            </div>
+
+            <div id="payment-details" style="display: none;">
+            <!-- Payment details specific to the selected method will be shown here -->
+            </div>
+            
+            <button type="submit" class="submit-btn">Pay & Register</button>
+        </form>
+        </div>
+    </div>
+    
+        <script>
+        const paymentOptions = document.querySelector('.payment-options');
+        const paymentDetails = document.getElementById('payment-details');
+
+        paymentOptions.addEventListener('change', function(event) {
+            const selectedValue = event.target.value;
+
+            // Clear previous payment details
+            paymentDetails.innerHTML = '';
+
+            if (selectedValue === 'card') {
+            paymentDetails.innerHTML = `
+                <label for="cardNumber">Card Number: </label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+
+                <label for="expiryDate">Expiry Date: </label>
+                <input type="text" id="expiryDate" name="expiryDate" required>
+
+                <label for="cvv">CVV: </label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <div class="applogo">
+                <img src="MasterCard.png" alt="">
+                <img src="Visa.png" alt=""></div>
+            `;
+            } else if (selectedValue === 'upi') {
+            paymentDetails.innerHTML = `
+                <label for="upiId">UPI ID: </label>
+                <input type="text" id="upiId" name="upiId" required>
+
+                <div class="applogo">
+                    <img src="GPay.png" alt="">
+                    <img src="PhonePe.png" alt="">
+                    <img src="PayPal.png" alt="">
+                    <img src="Paytm.png" alt="">
+                </div>
+            `;
+            } else if (selectedValue === 'netbanking') {
+            paymentDetails.innerHTML = `
+                <label for="bank">Select Bank: </label>
+                <select id="bank" name="bank" required>
+                <option hidden value="">--Select Bank--</option>
+                <option value="bank1">Karnataka Bank</option>
+                <option value="bank2">SBI Bank</option>
+                <option value="bank3">HDFC Bank</option>
+                <option value="bank4">ICICI Bank</option>
+                <option value="bank5">Kotak Mahindra Bank</option>
+                <!-- Add more bank options here -->
+                </select>
+
+                <div class="applogo">
+                    <img src="KarnatakaBank.jpg" alt="">
+                    <img src="SBIBank.png" alt="">
+                    <img src="HDFCBank.jpg" alt="">
+                    <img src="ICICIBank.png" alt="">
+                    <img src="KOTAKBank.png" alt="">
+                </div>
+            `;
+            }
+
+            paymentDetails.style.display = 'block';
+        });
+        </script>
+    </body>
+</html>

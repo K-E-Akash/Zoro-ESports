@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+}
+
+main {
+    background-color: rgb(179, 0, 224);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form {
+    background-color: black;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 55px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 1px rgb(52, 52, 52);
+}
+
+h1,h3 {
+    font-size: 50px;
+    color: rgb(60, 255, 0);
+    font-family: 'Tektur', cursive;
+    margin: 80px 0px 0px 0px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+
+input, select{
+    border: none;
+    border-bottom: 1.5px crimson solid;
+    font-size: 18px;
+    font-family: 'Nanum Gothic',sans-serif;
+    background-color: black;
+    color: crimson;
+    width: 560px;
+    margin: 15px;
+    font-weight: 500;
+}
+
+input::placeholder {
+    color: crimson;
+}
+
+input:focus, select:focus {
+    background-color: black;
+    color: white;
+    height: 35px;
+    /* border-radius: 20px; */
+}
+
+option {
+    font-size: 21px;
+}
+
+.TandC {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#t-c {
+    width: 20px;
+    height: 20px;
+}
+
+.TandC label {
+    font-size: 18px;
+    font-family: 'Nanum Gothic',sans-serif;
+    color: crimson;
+}
+
+#Proceed {
+    width: 150px;
+    padding: 8px;
+    margin-bottom: 60px;
+    background-color: rgb(60, 255, 0);
+    color: black;
+    border-radius: 3px;
+}

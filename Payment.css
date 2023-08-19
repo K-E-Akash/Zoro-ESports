@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+}
+
+.screen {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 0, 224);
+}
+
+.container {
+    width: 80%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 1px rgb(52, 52, 52);
+    margin: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    color: rgb(60, 255, 0);
+    font-family: 'Tektur', cursive;
+    margin: 30px 0px 0px 440px;
+}
+
+#title {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 520px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 25px;
+    font-family: 'Nanum Gothic',sans-serif;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+input,select {
+    height: 30px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic',sans-serif;
+}
+
+option {
+    font-family: 'Nanum Gothic',sans-serif;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 25px 10px;
+}
+
+.applogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn {
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 20px;
+    color: rgb(60, 255, 0);
+    font-family: 'Tektur', cursive;
+    border: 2px white solid;
+    margin-left: 520px;
+    margin-bottom: 55px;
+    margin-top: 45px;
+}
+
+.buttonsize {
+    width: 20px;
+}

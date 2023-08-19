@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Ruwudu&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Oswald:wght@500&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Ruwudu&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Dancing+Script&family=Lato&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Oswald:wght@500&family=Preahvihear&family=REM&family=Roboto+Slab&family=Rubik&family=Ruwudu&family=Tektur:wght@600&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+}
+
+#events {
+    background-color: black;
+}
+
+#event {
+    height: 70px;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    /* backdrop-filter: blur(10px); */
+}
+
+header h1 {
+    font-size: 65px;
+    color: rgb(60, 255, 0);
+    font-family: 'Tektur', cursive;
+    margin: 15px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 320px;
+}
+
+header div {
+    font-size: 30px;
+    font-family: 'Tektur', cursive;
+    margin: 15px;
+    color: crimson;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Tektur', cursive;
+    margin: 15px;
+    color: crimson;
+}
+
+.home {
+    height: 100vh;
+}
+
+.home img {
+    margin-top: 100px;
+    width: 100%;
+    height: 86vh;
+}
+
+.home h4 {
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+.home h1 {
+    position: absolute;
+    right: 50px;
+    top: 210px;
+    font-size: 100px;
+    color: rgb(60, 255, 0);
+    font-family: 'Tektur', cursive;
+    text-shadow: 7px 7px 4px black;
+}
+
+.home h2 {
+    position: absolute;
+    right: 50px;
+    top: 315px;
+    font-size: 68px;
+    color: rgb(204, 2, 255);
+    font-family: 'Tektur', cursive;
+    text-shadow: 7px 7px 4px black;
+}
+
+.home h3 {
+    position: absolute;
+    right: 50px;
+    top: 400px;
+    font-size: 55px;
+    color: rgb(255, 0, 51);
+    font-family: 'Bricolage Grotesque', sans-serif;
+    text-shadow: 4px 4px 4px black;
+    font-weight: 800;
+}
+
+.home h5 {
+    position: absolute;
+    right: 50px;
+    top: 470px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 10px black;
+}
+
+.home input {
+    width:250px;
+    height: 65px;
+    position: absolute;
+    right: 250px;
+    top: 560px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 26px;
+    border-radius: 80px;
+    border: none;
+}
+
+.carousel-item img{
+    margin: 25px 230px 18px 230px;
+    width: 70%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev {
+    margin-left: 150px;
+}
+
+.carousel-control-next {
+    margin-right: 150px;
+}
+
+
+.elementNAME h1 {
+    font-size: 65px;
+    color: rgb(255, 0, 51);
+    font-family: 'Tektur', cursive;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#val-events {
+    font-size: 60px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Card styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: #000000;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    padding-left: 23px;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+    /* padding-left: 30px; */
+}
+
+.container .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+    padding-right: 50px;
+}
+
+.container .card .content p {
+    color: #333;
+    margin-right: 30px;
+}
+
+.container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 6px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+    margin-right: 54px;
+    font-size: 20px;
+}
+
+.container .card .content a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: aqua;
+}
+
+@media (max-width: 480px) {
+    .container .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .container .card .content a {
+        font-size: 0.8rem;
+    }
+}
+
+#down {
+    font-size: 50px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: white;
+    margin-left: 30px;
+}
+
+.download {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+} 
+
+.img img {
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.appname {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.appname label {
+    font-size: 40px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: rgb(181, 181, 181);
+    margin-top: 130px;
+    margin-left: 3px;
+}
+
+.appname h1 {
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 25px;
+    border: 3px white solid;
+    width: 160px;
+    color: rgb(0, 125, 234);
+}
+
+.appname a {
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands h1 {
+    font-family: 'Tektur', cursive;
+    font-weight: 600;
+    margin: 28px 10px;
+}
+
+.footer p,pre {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
